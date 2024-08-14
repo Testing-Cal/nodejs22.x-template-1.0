@@ -14,7 +14,7 @@ var server = http.createServer(function(request, response) {
                        response.end('Internal Server Error');
                      } else {
                        response.writeHead(200, {'Content-Type': 'text/html'});
-                       const pageTitle = 'Node.js 20 without Express';
+                       const pageTitle = 'Node.js 22 without Express';
                        const pageBody = 'Hello, Welcome to Engineering Lab! Start editing to see some magic happen :)';
                        let html = data.toString();
                        html = html.replace('<title></title>', `<title>${pageTitle}</title>`);
